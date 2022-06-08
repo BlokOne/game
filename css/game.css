@@ -321,13 +321,13 @@ img {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background-image: url("/img/icons/soundOn.png");
+  background-image: url("./img/icons/soundOn.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .game__buttons-sound.active {
-  background-image: url("/img/icons/soundOff.png");
+  background-image: url("./img/icons/soundOff.png");
 }
 
 .game__buttons {
