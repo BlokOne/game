@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/game.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="works__canvas-game work ">
+    <div class="works__canvas">
+
+       <div class="game active">
+          <div class="game__setting active">
+                <h3 class="works__title">Game Snakes</h3>
+             <div class="game__setting-wrapper">
+                <div class="game__setting-numbers">
+                   <h2>Выберите количество игроков</h2>
+                   <div class="game__setting-number">
+                      <p class="game__setting-number-title">3</p>
+                      <input
+                         class="game__setting-input"
+                         type="range"
+                         step="1"
+                         max="4"
+                         min="1"
+                      />
+                   </div>
+                   <button class="game__setting-button-start">
+                      Начать
+                   </button>
+                </div>
+                <div class="game__setting-color"></div>
+             </div>
+          </div>
+          <div class="game__end">
+             <div class="game__end-wrapper">
+                <div class="game__end-title"></div>
+                <div class="game__end-buttons">
+                   <button class="game__end-replay">
+                      <img src="./img/icons/reload.png" alt="" />
+                   </button>
+                   <button class="game__end-close">
+                      <div class="game__end-icon"></div>
+                   </button>
+                </div>
+             </div>
+          </div>
+          <div class="game__wrapper">
+             <canvas
+                class="canvas"
+                id="game"
+                width="600"
+                height="600"
+             ></canvas>
+             <div class="game__wrapper-players">
+                <div class="game__players">
+                   <span></span>
+                </div>
+                <button id="role">
+                   <div class="cube-game">
+                      <article class="back-game">
+                         <div class="dots"></div>
+                      </article>
+                      <article class="top-game">
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                      </article>
+                      <article class="front-game">
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                      </article>
+                      <article class="bottom-game">
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                      </article>
+                      <article class="left-game">
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                      </article>
+                      <article class="right-game">
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                         <div class="dots"></div>
+                      </article>
+                   </div>
+                </button>
+                <div class="game__buttons">
+                   <button>
+                      <img
+                         src="/img/icons/wheel.png"
+                         class="mix"
+                         alt=""
+                      />
+                   </button>
+
+                   <div class="game__buttons-sound"></div>
+                   <button>
+                      <img
+                         src="/img/icons/exit.png"
+                         class="exit"
+                         alt=""
+                      />
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <script src="./game.js"></script>
+</body>
+</html>
