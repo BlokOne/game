@@ -34,9 +34,6 @@ replayGame.addEventListener('click',()=>{
    endModal.classList.remove('active')
 })
 
-endGameButton.addEventListener('click',()=>{
-   document.querySelector('.game').classList.remove('active')
-})
 
 function endGameModal (player) {
    gameSetting.classList.remove("active");
